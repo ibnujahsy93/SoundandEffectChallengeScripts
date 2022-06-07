@@ -43,7 +43,7 @@ public class PlayerControllerX : MonoBehaviour
             playerRb.AddForce(Vector3.down, ForceMode.Impulse);
         }
 
-        // While space is pressed and player is low enough, float up
+        
         else if (Input.GetKey(KeyCode.Space) && !gameOver)
         {
             playerRb.AddForce(Vector3.up * floatForce, ForceMode.Acceleration);
